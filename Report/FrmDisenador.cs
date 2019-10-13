@@ -168,7 +168,8 @@ namespace Report
             //Fill dictionary
             stireport.Dictionary.Synchronize();
             stireport.Design();
-        }
+            //ok
+        } 
 
         #region Eventos
 
