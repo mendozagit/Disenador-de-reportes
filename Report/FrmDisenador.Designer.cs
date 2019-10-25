@@ -33,16 +33,16 @@
             this.TxtDescripcion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnNuevo = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.BtnVer = new System.Windows.Forms.Button();
+            this.BtnDisenar = new System.Windows.Forms.Button();
             this.TxtClave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.ChkParam = new System.Windows.Forms.CheckBox();
             this.TxtQuery = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.BtnDisenar = new System.Windows.Forms.Button();
-            this.BtnVer = new System.Windows.Forms.Button();
-            this.BtnNuevo = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             this.label14.Location = new System.Drawing.Point(4, 10);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(1203, 10);
+            this.label14.Size = new System.Drawing.Size(1121, 10);
             this.label14.TabIndex = 125;
             // 
             // TxtDescripcion
@@ -107,8 +107,55 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 530);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1209, 85);
+            this.panel1.Size = new System.Drawing.Size(1127, 85);
             this.panel1.TabIndex = 133;
+            // 
+            // BtnNuevo
+            // 
+            this.BtnNuevo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnNuevo.Location = new System.Drawing.Point(657, 0);
+            this.BtnNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnNuevo.Name = "BtnNuevo";
+            this.BtnNuevo.Size = new System.Drawing.Size(94, 85);
+            this.BtnNuevo.TabIndex = 144;
+            this.BtnNuevo.Text = "&Nuevo";
+            this.BtnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnGuardar.Location = new System.Drawing.Point(751, 0);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(94, 85);
+            this.btnGuardar.TabIndex = 143;
+            this.btnGuardar.Text = "&Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnVer
+            // 
+            this.BtnVer.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnVer.Location = new System.Drawing.Point(845, 0);
+            this.BtnVer.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnVer.Name = "BtnVer";
+            this.BtnVer.Size = new System.Drawing.Size(94, 85);
+            this.BtnVer.TabIndex = 142;
+            this.BtnVer.Text = "&Ver";
+            this.BtnVer.UseVisualStyleBackColor = true;
+            this.BtnVer.Click += new System.EventHandler(this.BtnVer_Click);
+            // 
+            // BtnDisenar
+            // 
+            this.BtnDisenar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnDisenar.Location = new System.Drawing.Point(939, 0);
+            this.BtnDisenar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnDisenar.Name = "BtnDisenar";
+            this.BtnDisenar.Size = new System.Drawing.Size(94, 85);
+            this.BtnDisenar.TabIndex = 141;
+            this.BtnDisenar.Text = "&Diseñar";
+            this.BtnDisenar.UseVisualStyleBackColor = true;
+            this.BtnDisenar.Click += new System.EventHandler(this.BtnDisenar_Click);
             // 
             // TxtClave
             // 
@@ -138,7 +185,7 @@
             // BtnSalir
             // 
             this.BtnSalir.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnSalir.Location = new System.Drawing.Point(1115, 0);
+            this.BtnSalir.Location = new System.Drawing.Point(1033, 0);
             this.BtnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(94, 85);
@@ -165,7 +212,7 @@
             this.TxtQuery.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.TxtQuery.Location = new System.Drawing.Point(0, 112);
             this.TxtQuery.Name = "TxtQuery";
-            this.TxtQuery.Size = new System.Drawing.Size(1209, 418);
+            this.TxtQuery.Size = new System.Drawing.Size(1127, 418);
             this.TxtQuery.TabIndex = 134;
             this.TxtQuery.Text = "";
             // 
@@ -181,58 +228,11 @@
             this.label2.TabIndex = 135;
             this.label2.Text = "SQL";
             // 
-            // BtnDisenar
-            // 
-            this.BtnDisenar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnDisenar.Location = new System.Drawing.Point(1021, 0);
-            this.BtnDisenar.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnDisenar.Name = "BtnDisenar";
-            this.BtnDisenar.Size = new System.Drawing.Size(94, 85);
-            this.BtnDisenar.TabIndex = 141;
-            this.BtnDisenar.Text = "&Diseñar";
-            this.BtnDisenar.UseVisualStyleBackColor = true;
-            this.BtnDisenar.Click += new System.EventHandler(this.BtnDisenar_Click);
-            // 
-            // BtnVer
-            // 
-            this.BtnVer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnVer.Location = new System.Drawing.Point(927, 0);
-            this.BtnVer.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnVer.Name = "BtnVer";
-            this.BtnVer.Size = new System.Drawing.Size(94, 85);
-            this.BtnVer.TabIndex = 142;
-            this.BtnVer.Text = "&Ver";
-            this.BtnVer.UseVisualStyleBackColor = true;
-            this.BtnVer.Click += new System.EventHandler(this.BtnVer_Click);
-            // 
-            // BtnNuevo
-            // 
-            this.BtnNuevo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnNuevo.Location = new System.Drawing.Point(739, 0);
-            this.BtnNuevo.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnNuevo.Name = "BtnNuevo";
-            this.BtnNuevo.Size = new System.Drawing.Size(94, 85);
-            this.BtnNuevo.TabIndex = 144;
-            this.BtnNuevo.Text = "&Nuevo";
-            this.BtnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnGuardar.Location = new System.Drawing.Point(833, 0);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(94, 85);
-            this.btnGuardar.TabIndex = 143;
-            this.btnGuardar.Text = "&Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
             // FrmDisenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1209, 615);
+            this.ClientSize = new System.Drawing.Size(1127, 615);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtQuery);
             this.Controls.Add(this.panel1);
